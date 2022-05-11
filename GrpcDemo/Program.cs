@@ -15,7 +15,7 @@ public static class Program
                 webBuilder.UseStartup<Startup>();
             })
             .ConfigureServices(services =>
-            {
+            { //enables client
                 services.AddHostedService<Client.Client>();
             });
 }

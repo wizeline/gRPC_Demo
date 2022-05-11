@@ -31,7 +31,7 @@ public class Client: BackgroundService
             });
             
             _logger.LogInformation($"##Client Greeting: {reply.Message} -- {DateTime.Now}\n");
-            await Task.Delay(1000, ct);
+            await Task.Delay(1000, ct); //wait 1 sec
         }
     }
 }

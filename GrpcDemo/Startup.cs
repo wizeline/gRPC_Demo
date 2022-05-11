@@ -16,7 +16,7 @@ public class Startup
         {
             endpoints.MapGet("/", async context =>
             {
-                await context.Response.WriteAsync("Starting gRPC Demo.\n Look at the console output ...\n");
+                await context.Response.WriteAsync("Starting gRPC Demo.\n Look at the console output for details ...\n");
             });
             endpoints.MapGrpcService<Service>();
         });
