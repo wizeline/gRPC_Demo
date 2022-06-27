@@ -4,7 +4,7 @@ option csharp_namespace = "GrpcDemo";
 // The greeting service definition.
 service Greeter {
   
-  // Sends a greeting
+  // Sends a greeting, unary type
   rpc SayHello (HelloRequest) returns (HelloReply);
 }
 
